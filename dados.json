@@ -1,0 +1,24 @@
+{
+    "home_banner": [
+        {
+            "img" : "images/park-1.jpg",
+            "alt" : "Parque 1"
+        },
+        {
+            "img" : "images/park-2.jpg",
+            "alt" : "Parque 2"
+        },
+        {
+            "img" : "images/park-3.jpg",
+            "alt" : "Parque 3"
+        }
+    ],
+    "home_cards": [
+        {
+        "img": "",
+        "href": "36x36",
+        "title": "image\/png",
+        "density": "0.75"
+        }
+    ]
+}
