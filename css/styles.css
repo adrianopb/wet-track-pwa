@@ -1,0 +1,60 @@
+.bg-header, .bg-footer{
+    background-image: url('../images/water-bg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-footer {
+    text-align: center;
+}
+
+.nav-link {
+    font-weight: bolder;
+    color: white !important;
+}
+
+.nav-item.active .nav-link{
+    color: black !important;
+}
+
+.card-row {
+    background-color: #40e0d0;
+}
+
+.card {
+    color: gray;
+    font-weight: bolder !important;
+}
+
+.card-title {
+    font-size: 24px;
+}
+
+.card-grade.bad {
+    font-size: 20px;
+    color: red;
+}
+
+.card-grade.medium {
+    font-size: 22px;
+    color: grey;
+}
+
+.card-grade.good {
+    font-size: 24px;
+    color: yellowgreen;
+}
+
+.card-grade.great {
+    font-size: 30px;
+    color: green;
+}
+
+.logo {
+    max-width: 50px;
+}
+
+.park-content {
+    background-color: #40e0d0;
+    padding-bottom: 70px;
+}

@@ -15,10 +15,36 @@
     ],
     "home_cards": [
         {
-        "img": "",
-        "href": "36x36",
-        "title": "image\/png",
-        "density": "0.75"
+            "alt": "Parque Praia",
+            "title": "Parque Praia",
+            "href": "",
+            "img": "images/park-3.jpg",
+            "description": "Brazilian park with a private beach! Your family will love it!",
+            "grade" : "8"
+        },
+        {
+            "alt": "Pedra d'Água",
+            "title": "Pedra d'Água",
+            "href": "",
+            "img": "images/park-3.jpg",
+            "description": "Amazing park with the entrance underneath a waterfall",
+            "grade" : "7"
+        },
+        {
+            "alt": "Jungle Mango",
+            "title": "Jungle Mango",
+            "href": "",
+            "img": "images/park-3.jpg",
+            "description": "Caribean park. Come and take some margaritas!",
+            "grade" : "5"
+        },
+        {
+            "alt": "Trash Bash Splash",
+            "title": "Trash Bash Splash",
+            "href": "",
+            "img": "images/park-3.jpg",
+            "description": "Best water park in the world",
+            "grade" : "2"
         }
     ]
 }
