@@ -17,32 +17,36 @@
         {
             "alt": "Parque Praia",
             "title": "Parque Praia",
+            "location": "Maceió, Brazil",
             "href": "",
-            "img": "images/park-3.jpg",
+            "img": "images/waterworld-1.jpg",
             "description": "Brazilian park with a private beach! Your family will love it!",
             "grade" : "8"
         },
         {
             "alt": "Pedra d'Água",
             "title": "Pedra d'Água",
+            "location": "Fortaleza, Brazil",
             "href": "",
-            "img": "images/park-3.jpg",
+            "img": "images/waterworld-2.jpg",
             "description": "Amazing park with the entrance underneath a waterfall",
             "grade" : "7"
         },
         {
             "alt": "Jungle Mango",
             "title": "Jungle Mango",
+            "location": "Cancún, México",
             "href": "",
-            "img": "images/park-3.jpg",
+            "img": "images/waterworld-3.jpg",
             "description": "Caribean park. Come and take some margaritas!",
             "grade" : "5"
         },
         {
             "alt": "Trash Bash Splash",
             "title": "Trash Bash Splash",
+            "location": "Indianapolis, USA",
             "href": "",
-            "img": "images/park-3.jpg",
+            "img": "images/waterworld-4.jpg",
             "description": "Best water park in the world",
             "grade" : "2"
         }

@@ -54,10 +54,10 @@ ajax.onreadystatechange = function(){
         } 
         else {
 
-            var html_conteudo = "";
+            var html_conteudo = '<div class="col-12 my-2 park-card-title text-center">Encontre os melhores parques!</div>';
 
             for(var i=0; i < data_json.home_cards.length; i++){
-                html_conteudo+= park_card(data_json.home_cards[i].alt, data_json.home_cards[i].title, data_json.home_cards[i].href, data_json.home_cards[i].img, data_json.home_cards[i].description,data_json.home_cards[i].grade);
+                html_conteudo+= park_card(data_json.home_cards[i].alt, data_json.home_cards[i].title, data_json.home_cards[i].location, data_json.home_cards[i].href, data_json.home_cards[i].img, data_json.home_cards[i].description,data_json.home_cards[i].grade);
             }
 
             //Gravar a criação dos elementos
@@ -68,7 +68,7 @@ ajax.onreadystatechange = function(){
 }
 
 //Template do Card de Parques
-let park_card = function(alt, title, href, img, description, grade){
+let park_card = function(alt, title, location, href, img, description, grade){
 
     let grade_class_color = '';
 
@@ -88,12 +88,13 @@ let park_card = function(alt, title, href, img, description, grade){
         grade_class_color = 'great';
     } 
 
-    return  '<div class="col-12 mt-4 park-list">' +
+    return  '<div class="col-12 mb-4 park-list">' +
                 '<a href="'+ href + '">' +
                     '<div class="card">' +
                         '<img src="'+ img +'" class="card-img-top" alt="'+ alt +'">' +
                         '<div class="card-body">' +
                             '<p class="card-title">'+ title +'</p>' +
+                            '<span class="card-location">'+ location +'</span>' +
                             '<span class="card-text">'+ description +'</span>' +
                             '<span class="float-right"><span class="card-grade '+ grade_class_color +'">'+ grade +'</span>/10</span>' +
                         '</div>' +

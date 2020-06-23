@@ -5,7 +5,15 @@ const CACHE_NAME = 'wet-track-v1';
 const FILES_TO_CACHE = [
     'images/icons/favicon.ico',
     'images/logo.png',
-    'images/water-bg.jpeg',
+    'images/background-theme.jpg',
+    'images/footer-bg.jpg',
+    'images/park-1.jpg',
+    'images/park-2.jpg',
+    'images/park-3.jpg',
+    'images/waterworld-1.jpg',
+    'images/waterworld-2.jpg',
+    'images/waterworld-3.jpg',
+    'images/waterworld-4.jpg',
     'css/styles.css',
     'bootstrap/css/bootstrap.min.css',
     'bootstrap/css/bootstrap.min.css.map',
@@ -14,7 +22,9 @@ const FILES_TO_CACHE = [
     'js/jquery-3.5.1.min.js',
     'js/popper.min.js',
     'js/popper.min.js.map',
-    'offline.html',
+    'js/app.js',
+    'dados.json',
+    '/',
 ];
 
 //Instala o service worker no browser
@@ -56,20 +66,32 @@ self.addEventListener('activate', (evt) => {
 });
 
 //Responder a versão offline do app
-self.addEventListener('fetch', (evt) => {
-    console.log('[ServiceWorker] Recebendo', evt.request.url);
+// self.addEventListener('fetch', (evt) => {
+//     console.log('[ServiceWorker] Recebendo', evt.request.url);
 
-    if (evt.request.mode !== 'navigate') {
-        return;
-    }
-    evt.respondWith(
-        fetch(evt.request)
-            .catch(() => {
-                return caches.open(CACHE_NAME)
-                    .then((cache) => {
-                        return cache.match('/offline.html');
-                    });
+//     if (evt.request.mode !== 'navigate') {
+//         return;
+//     }
+//     evt.respondWith(
+//         fetch(evt.request)
+//             .catch(() => {
+//                 return caches.open(CACHE_NAME)
+//                     .then((cache) => {
+//                         return cache.match('/offline.html');
+//                     });
+//             })
+//     );
+
+// });
+
+self.addEventListener('fetch', function(event) {
+    event.respondWith(
+      fetch(event.request)
+        .catch(() => {
+          return caches.open(CACHE_NAME)
+            .then((cache) => {
+              return cache.match(event.request)
             })
-    );
-
-});
+        })
+    )
+  });

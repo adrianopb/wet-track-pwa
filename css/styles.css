@@ -1,24 +1,26 @@
-.bg-header, .bg-footer{
-    background-image: url('../images/water-bg.jpeg');
+.bg-header{
+    background-image: url('../images/background-theme.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .bg-footer {
     text-align: center;
+    background-image: url('../images/footer-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.nav-link {
+.navbar-brand {
     font-weight: bolder;
     color: white !important;
-}
-
-.nav-item.active .nav-link{
-    color: black !important;
+    text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
 }
 
 .card-row {
-    background-color: #40e0d0;
+    background-image: url('../images/background-theme.jpg');
+    background-repeat: repeat;
+    background-size: contain;
 }
 
 .card {
@@ -28,6 +30,12 @@
 
 .card-title {
     font-size: 24px;
+    color: white;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+.card-grade {
+    text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey;
 }
 
 .card-grade.bad {
@@ -55,6 +63,21 @@
 }
 
 .park-content {
-    background-color: #40e0d0;
+    background-image: url('../images/background-theme.jpg');
+    background-repeat: repeat;
+    background-size: contain;
     padding-bottom: 70px;
+}
+
+.park-card-title {
+    text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.btn-install {
+    color: black;
+    font-weight: bold;
+    background-color: white;
 }
